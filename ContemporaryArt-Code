@@ -120,7 +120,7 @@ def scrape_contemporary_art_library():
     data = []
 
     try:
-        url = "link_to_webpage"
+        url = "https://www.contemporaryartlibrary.org/search/exhibition"
         logger.info(f"Scraping URL: {url}")
         driver.get(url)
 
@@ -183,13 +183,17 @@ def scrape_contemporary_art_library():
 
     df = pd.DataFrame(data)
     try:
-        df.to_excel('fileName.xlsx', index=False)
-        logger.info("Data has been saved to filename.xlsx")
+        df.to_excel('contemporary_art_library_details.xlsx', index=False)
+        logger.info("Data has been saved to contemporary_art_library_details.xlsx")
     except Exception as e:
         logger.error(f"Error saving data to Excel: {e}")
 
 if __name__ == "__main__":
     try:
+        scrape_contemporary_art_library()
+    except Exception as e:
+        logger.error(f"Error in main function: {e}")
+
         scrape_contemporary_art_library()
     except Exception as e:
         logger.error(f"Error in main function: {e}")
