@@ -53,12 +53,12 @@ cd art-exhibition-scrapers
 
 ### Install the required packages:
 ```bash
-pip install -r requirements.txt
+pip install -r contemporary-art-library-requirements.txt
 ```
 ### Install the required packages:
 
 ```bash
-pip install -r requirements.txt
+pip install -r art-viewer-requirements.txt
 ```
 
 ## Usage
