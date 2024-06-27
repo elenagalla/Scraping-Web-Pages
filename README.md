@@ -83,7 +83,77 @@ You can modify the following variables in the script to adjust the scraper's beh
 - batch_size: Number of entries to process and save at once
 
 ## Output
-The scraper generates Excel files with columns including Artist, Venue, Exhibition Title, Date, and Image URLs. The Art Viewer scraper also includes an Additional Info column. Additionally, you can modify the scripts to include a "Gallery Location" column. This column can be populated by extracting location information from the venue details or through additional data processing steps.
+
+### Art Viewer 
+1. Artist
+
+      Contains the name of the artist(s) for each exhibition
+      Multiple artists are separated by commas
+      If no artist is found, it will contain "N/A"
+
+
+2. Venue
+
+      The name of the venue hosting the exhibition
+      If no venue is found, it will contain "N/A"
+
+
+3. Exhibition title
+
+      The title of the exhibition
+      If no title is found, it will contain "N/A"
+
+
+4. Date
+
+      The date or date range of the exhibition
+      If no date is found, it will contain "N/A"
+
+
+5. Image_URLs
+
+      A JSON string containing URLs of images related to the exhibition
+      Includes both images from the main page and any nested pages
+
+
+6. Additional Info
+
+      Contains additional text information about the exhibition
+      This could include descriptions, artist statements, or other relevant details
+      The information is collected from both the main page and any nested pages
+
+### Contemporary Art
+
+1. Artist
+
+      Contains the name of the artist(s) for each exhibition
+      If multiple artists, they are likely separated by commas
+      If no artist is found, it will contain "N/A"
+
+
+2. Exhibition Title
+
+      The title of the exhibition
+      If no title is found, it will contain "N/A"
+
+
+3. Venue
+
+      The name of the venue hosting the exhibition
+      If no venue is found, it will contain "N/A"
+
+
+4. Date
+
+      The date or date range of the exhibition
+      If no date is found, it will contain "N/A"
+
+
+4. Images_1, Images_2, etc.
+
+      These columns contain URLs of images related to the exhibition
+      The number of these columns depends on how many images are found and how they are split (due to Excel cell size limitations)
+      Each cell in these columns contains a JSON string of image URLs
 
 ## Logging
 The script uses Python's built-in logging module to provide information about the scraping process. You can adjust the logging level in the script if needed.
