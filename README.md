@@ -4,34 +4,45 @@ Scripts
 
 ## Contemporary Art Library Scraper ('contemporary_art_library_scraper.py')
 
-Scrapes exhibition details from the Contemporary Art Library website.
-Extracts artist names, exhibition titles, venues, dates, and image URLs.
-Handles lazy-loaded content.
-Saves data to an Excel file.
+- Scrapes exhibition details from the Contemporary Art Library website.
+
+- Extracts artist names, exhibition titles, venues, dates, and image URLs.
+
+- Handles lazy-loaded content.
+
+- Saves data to an Excel file.
 
 
 ## Art Viewer Scraper (art_viewer_scraper.py)
 
-Scrapes exhibition details from the Art Viewer website.
-Extracts artist names, venues, exhibition titles, dates, image URLs, and additional information.
-Handles multiple pages and nested URLs.
-Processes data in batches and saves to an Excel file.
+- Scrapes exhibition details from the Art Viewer website.
 
+- Extracts artist names, venues, exhibition titles, dates, image URLs, and additional information.
+
+- Handles multiple pages and nested URLs.
+
+- Processes data in batches and saves to an Excel file.
 
 
 ## Features
 
-Multi-threaded scraping for improved performance
-Error handling and retry mechanisms
-Logging for debugging and monitoring
-Batch processing of data
-Handling of lazy-loaded content
+- Multi-threaded scraping for improved performance
+
+- Error handling and retry mechanisms
+
+- Logging for debugging and monitoring
+
+- Batch processing of data
+
+- Handling of lazy-loaded content
 
 ## Requirements
 
-Python 3.7+
-Chrome browser
-ChromeDriver (automatically managed by webdriver_manager)
+- Python 3.7+
+
+- Chrome browser
+
+- ChromeDriver (automatically managed by webdriver_manager)
 
 ## Installation
 
@@ -65,21 +76,20 @@ You can modify the following variables in the script to adjust the scraper's beh
 ### Contemporary Art Library Scraper:
 
 
-SCROLL_PAUSE_TIME: Time to pause between scrolls
+- SCROLL_PAUSE_TIME: Time to pause between scrolls
 
-SCROLL_INCREMENT: How much to scroll each time
+- SCROLL_INCREMENT: How much to scroll each time
 
-MAX_ATTEMPTS: Maximum number of scroll attempts before stopping
+- MAX_ATTEMPTS: Maximum number of scroll attempts before stopping
 
 ### Art Viewer Scraper:
 
-urls: List of URLs to scrape
+- urls: List of URLs to scrape
 
-
-batch_size: Number of entries to process and save at once
+- batch_size: Number of entries to process and save at once
 
 ## Output
-The scraper generates Excel files with columns including Artist, Venue, Exhibition Title, Date, and Image URLs. The Art Viewer scraper also includes an Additional Info column.
+The scraper generates Excel files with columns including Artist, Venue, Exhibition Title, Date, and Image URLs. The Art Viewer scraper also includes an Additional Info column. Additionally, you can modify the scripts to include a "Gallery Location" column. This column can be populated by extracting location information from the venue details or through additional data processing steps.
 
 ## Logging
 The script uses Python's built-in logging module to provide information about the scraping process. You can adjust the logging level in the script if needed.
