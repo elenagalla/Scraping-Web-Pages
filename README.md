@@ -1,6 +1,5 @@
 # Art Exhibition Web Scrapers
 This repository contains two web scraping scripts designed to extract exhibition details from different art-related websites. The scripts use Selenium WebDriver for web navigation, BeautifulSoup for HTML parsing, and Pandas for data manipulation and storage.
-Scripts
 
 ## Contemporary Art Library Scraper ('contemporary_art_library_scraper.py')
 
