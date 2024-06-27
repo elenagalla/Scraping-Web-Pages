@@ -73,16 +73,11 @@ The script will start scraping the specified websites, and the progress will be 
 ## Configuration
 You can modify the following variables in the script to adjust the scraper's behavior:
 
-### Contemporary Art Library Scraper:
-
-
 - SCROLL_PAUSE_TIME: Time to pause between scrolls
 
 - SCROLL_INCREMENT: How much to scroll each time
 
 - MAX_ATTEMPTS: Maximum number of scroll attempts before stopping
-
-### Art Viewer Scraper:
 
 - urls: List of URLs to scrape
 
