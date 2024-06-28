@@ -47,7 +47,7 @@ This repository contains two web scraping scripts designed to extract exhibition
 
 Clone this repository:
 ```bash
-Copygit clone https://github.com/yourusername/art-exhibition-scrapers.git
+git clone https://github.com/yourusername/art-exhibition-scrapers.git
 cd art-exhibition-scrapers
 ```
 
